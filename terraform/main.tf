@@ -7,14 +7,14 @@ provider "fastly" {
   api_key = "${var.fastly_api_token}"
 }
 
-resource "fastly_service_v1" "service" {
-  name = "< REPLACE WITH YOUR SERVICE NAME >"
+resource "fastly_service_v1" "abcd-cbuckley-demo" {
+  name = "abcd cbuckley demo"
 
   force_destroy = true
 
   domain {
-    name    = "<REPLACE WITH YOUR SERVICE NAME >.fastly-altitude-2017.com"
-    comment = "Demo domain"
+    name    = "cbuckley.fastly-altitude-2017.com"
+    comment = "Cbuckley domain"
   }
 
   backend {
