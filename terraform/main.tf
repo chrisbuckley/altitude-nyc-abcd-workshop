@@ -13,7 +13,7 @@ resource "fastly_service_v1" "abcd-cbuckley-demo" {
   force_destroy = true
 
   domain {
-    name    = "cbuckley.fastly-altitude-2017.com"
+    name    = "cbuckley2.fastly-altitude-2017.com"
     comment = "Cbuckley domain"
   }
 
